@@ -36,7 +36,7 @@ pessoa.nome = "Davi Marques"
 produtos.descricao = ['Arroz']
 produtos.preco = [4.99] 
 
-//Usando spreed para adicionar além do primeiro.
+//Usando spreed para adicionar além do primeiro. (mesmo que seja const)
 produtos.descricao = [...produtos.descricao, 'Feijão', 'Trigo']
 produtos.preco = [...produtos.preco, 9.99 , 4.79]
 
