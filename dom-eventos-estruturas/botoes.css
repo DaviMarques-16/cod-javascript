@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: #ccc;
+}
+
+main{
+    min-width: 960px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+}
+
+section {
+    width: 960px;
+    margin: 0 auto;
+}
+
+h1,section,article{
+    margin-bottom: 1rem;
+}
+
+#botoes{
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+button{
+    border: 1px solid maroon;
+    border-radius: 8px;
+    padding: 0.625rem;
+}
+
+#light{
+    background-color: azure;
+    color: rgb(6, 1, 12);
+}
+
+#dark{
+    background-color: #222;
+    color: aliceblue;
+}
+
+.light{
+    background-color: azure;
+    color: rgb(6, 1, 12);
+}
+.dark{
+    background-color: #222;
+    color: aliceblue;
+}
+
+.azul{
+    background: #4a4caa;
+    color: white;
+    padding: 0.625rem;
+}
+
+.telaprincipal {
+    transition: background-color 0.5s, color 0.5s;
+}
