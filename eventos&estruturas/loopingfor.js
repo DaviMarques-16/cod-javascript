@@ -1,4 +1,4 @@
-//ESTRUTURA/LAÇO DE REPETIÇAO (FOR)
+/*//ESTRUTURA/LAÇO DE REPETIÇAO (FOR)
 let carros = ['Fusca', 'Brasília', 'Gurgel']
 
 // FOR = para faça
@@ -25,4 +25,16 @@ frutas.forEach(function(fruta, i) {
 
 carros.forEach(function(carro){
     document.write(`${carro} <br>`)
-})
+})*/
+
+//FOR IN (percorre o vetor mais facilmente)
+let num = [0,10,20,30,40,60,60]
+
+for(n in num){
+    console.log(num[n])
+}
+
+//FOR OF (pega diretamente os itens da coleção)
+for(n of num){
+    console.log(n)
+}
