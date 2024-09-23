@@ -1,4 +1,4 @@
-let titulo = document.querySelector('h1')
+/*let titulo = document.querySelector('h1')
 titulo.textContent = 'Funções no Java Script'
 let box = document.querySelectorAll('box')
 
@@ -38,20 +38,50 @@ somar(x, y)
 somar(10, 5)
 
 document.write(`<p>${somar2(x, y)} </p><br>`)
-document.write(`<p>${somar2(5, 2)} </p><br>`)
+document.write(`<p>${somar2(5, 2)} </p><br>`)*/
 
-//FUNÇÃO ANÔNIMA
+//FUNÇÃO COM PARÂMETRO REST (quantidade de parâmetros indefinidos)
+function soma(...valores){
+    res = 0
+    for(let i = 0; i<valores.length; i++){
+        res += valores[i]
+    }
+    return res
+}
+    //OU...
+    /* for(let v of valores){
+        res += v
+    } */
+
+
+console.log(soma(10,5,2,15,8))
+
+/*//FUNÇÃO ANÔNIMA
 //PODE OU NÃO TER PARÂMETROS OU RETORNOS
 //passar uma função como parâmetro dentro de outra (ex: addeventlistener)
+
 titulo.addEventListener('click', function () {
     console.log('Clicou no título!')
-})
+})*/
 
-//ARROW FUNCTION!
+let f = function(...valores){
+    let res = 0
+    for(v of valores){
+        res += v
+    }
+    return res
+}
+
+console.log(f(10,5,9,8))
+
+const g = new Function("v1","v2", "return v1+v2") //Função construtora anônima.
+console.log(g(1,8))
+
+/*//ARROW FUNCTION!
 //nome da função é o nome da constante
 //1 acão = chave opcional
 //2 ações = chaves obrigatórias
 //não precisa de nome, nem de retorno
 const olaArrowFunction = () => '<p>Funções Arrows são interessantes pra caramba. </p>'
 
-document.write(olaArrowFunction())
+document.write(olaArrowFunction())*/
